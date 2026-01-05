@@ -1,0 +1,59 @@
+/* vamos falar de POSITION: importante 
+    postion : ststic (padrao) nao seita valores de top, bottom,right e left
+    postion : fixed fixa o elemento na tela.
+    postion : stickey (gruda) o elemento fica fixo quando chega em um determinado ponto da tela
+    postion : relatve (relativo) o elemento se posiciona em relacao a sua posicao normal na pagina
+    postion : absolute (absoluto) o elemento sai do fluxo normal da pagina e se posiciona em relacao ao seu primeiro elemento pai que tenha
+        - se nao tiver pai/ pai for static posicions referente a pagna
+        - se o pai não dor static posiciona referente ao pai
+        
+        propiedades:
+        top= topo
+        bottom=baixo
+        left=esquerda
+        right= direita
+    PSEUDO ELEMENTOS:  ::before e ::after
+    - sao elementos que nao existem no html mas que podemos criar com css
+    - sao criados com conteudo vazio content: ""
+    - podem ser estilizados como qualquer outro elemento
+    - sao muito usados para adicionar decoracoes sem poluir o html
+    EXEMPLO DE USO:elemento::before
+    
+    }
+
+        */
+
+*{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        height: 200vh;
+        width: 200vw;
+    }
+
+    .div-dad{
+        position: relative;
+        width: 350px;
+        height: 350px;
+        background-color: lightblue;
+    }
+
+    .div-son{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: orange;
+        top: 50px;
+        left: 50px;
+    }
+    .tanananan{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        top: 20px;
+        left: 20px;
+    }
+
+
+    

@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+input {
+    border: 1px solid red;
+    color: blue;
+}
+
+input::placeholder {
+    color: #ff1396;
+
+}
+
+p{
+    color: blue;
+
+}
+
+p::first-laine {
+    font-size: 3rem;
+    color: red;
+    font-weight: bold;
+}
+
+a:hover{
+    color: black;
+}
+
+a::before {
+    content: "🚀 ";
+   
+}
+
+a::after {
+    content: " 🌝";
+  
+}
+
+li:first-child {
+    color: green;
+}
+
+/* o pseudo elemento first-laine seleciona a primeira linha do paragrafo 
+o pseudo elemento placeholder seleciona o texto que esta dentro do input 
+ o pseudo elemento é sempre precedido por dois pontos (::) 
+o pseudo elemento é usado para estilizar partes especificas de um elemento HTML 
+o pseudo elemento first-laine so funciona em elementos de bloco como paragrafo, div, section, etc 
+o pseudo elemento placeholder so funciona em elementos de formulario como input, textarea, select, etc
+o pseudo elemento first-laine so funciona na primeira linha do elemento, independente do tamanho da tela
+o pseudo elemento placeholder so funciona no texto que esta dentro do input, independente do tamanho da tela
+::after DEPOIS DO ELEMENTO
+::before ANTES DO ELEMENTO/*
+
+/* pseudo clases 
+o pseudo classe é sempre precedida por um unico ponto (:)
+o pseudo classe é usado para estilizar estados especificos de um elemento HTML
+o pseudo classe hover estiliza o elemento quando o mouse esta sobre ele
+o pseudo classe active estiliza o elemento quando ele esta sendo clicado
+o pseudo classe focus estiliza o elemento quando ele esta em foco (clicado ou selecionado)
+o pseudo classe visited estiliza o elemento quando ele ja foi visitado (link)
+o pseudo classe nth-child(n) estiliza o enesimo filho de um elemento pai
+o pseudo classe first-child estiliza o primeiro filho de um elemento pai
+o pseudo classe last-child estiliza o ultimo filho de um elemento pai
+o pseudo classe only-child estiliza o unico filho de um elemento pai
+o pseudo classe not(selector) estiliza todos os elementos que nao correspondem ao seletor especificado
+o pseudo classe checked usado em radio/ checkbox/ select
+o pseudo classe disabled elemento desabilitado/ button/ input
+o pseudo classe */
+
+/* :active quando o elemento esta sendo clicado
+:hover quando o mouse esta sobre o elemento
+:visited quando o link ja foi visitado
+:focus quando o elemento esta em foco (clicado ou selecionado) elemento em foco, o que significa q ele esta selecionado ou clicado
+:checked usado em radio/ checkbox/ select
+:disabled elemento desabilitado/ button/ input
+:enabled elemento habilitado/ button/ input
+:read-only seleciona elementos que sao somente leitura, como campos de formulario que nao podem ser editados
+:empty seleciona elementos que nao possuem filhos ou conteudo, como divs vazias ou paragrafo sem texto
+:nth-child(n) estiliza o enesimo filho de um elemento pai
+:first-child estiliza o primeiro filho de um elemento pai
+:last-child estiliza o ultimo filho de um elemento pai  
+:only-child estiliza o unico filho de um elemento pai
+:nth-child(n) estiliza o enesimo filho de um elemento pai
+:nth-last-child(n) estiliza o enesimo filho de um elemento pai, contando a partir do ultimo filho
+:not(selector) estiliza todos os elementos que nao correspondem ao seletor especificado
+:first-of-type estiliza o primeiro elemento do seu tipo dentro do elemento pai
+:last-of-type estiliza o ultimo elemento do seu tipo dentro do elemento pai
+:nth-of-type(n) estiliza o enesimo elemento do seu tipo dentro do elemento pai
+:root seleciona o elemento raiz do documento, geralmente o elemento <html>  
+:lang(language-code) estiliza elementos com base no atributo de idioma especificado, como :lang(en) para ingles ou :lang(pt) para portugues
+:dir(direction) estiliza elementos com base na direcao do texto, como :dir(ltr) para esquerda para direita ou :dir(rtl) para direita para esquerda*/

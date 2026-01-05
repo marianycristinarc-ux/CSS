@@ -1,0 +1,193 @@
+  
+    /*<!----ao colocar * antes de uma propriedade, todas as propriedades 
+    vao receber o mesmo estilo
+    ---->*/
+    /*.CSS= FOLHA DE ESTILO EM CASCATA;
+    APLICADO DE CIMA PARA BAIXO, cuidado para uma cor nao sobrepor a outra, 
+    sempore colocar a cor que quer que fique por ultimo, 
+    e analise o que esta acontecendo no propio site em seu desenvolvedor
+    ferramentas do navegador  F12
+    esmpre que estiver uma configuração cortada é que o estilo esta sobrepondo o outro
+    unidades de medida: 
+    px(pixels)1/100 polegadas:0,254mm
+    in(incches/polegadas)
+    cm/mm (centimetro e milimetro)
+    RELATRIVAS: para responsivo
+    em unidade relativa ao tamanho da fonte do elemento pai 'unidade transitoria'
+    % porcentagem relativa ao elemento pai
+    rem é uma raiz relativa ao tamanho da fonte do elemento html
+    % calcula o tamanho relativo ao elemento
+    vw,vh este soa relativos s tela do dispositivo 1vw = 1% da largura da tela do dispositivo
+    cores em css:
+    nomes: red, blue, green, black, white, yellow, orange, purple, pink, brown, gray, cyan, magenta
+    HEXADECIMAIS(16): #RRGGBB
+    background-color: #FF0000 (vermelho)
+    RGB: rgb(255,0,0) (vermelho) pode misturar valores de 0 a 255
+    RGBA: rgb(255,0,0,0.5) (vermelho com transparencia) o ultimo valor é a transparencia de 0 a 1
+    HSL: hsl(0,100%,50%) (vermelho) h   = matiz (0 a 360), s = saturação (0 a 100%), l = luminosidade (0 a 100%)
+    HSLA: hsl(0,100%,50%,0.5) (vermelho com transparencia) o ultimo valor é a transparencia de 0 a 1 
+    a ausencia de cor no background deixa transparente e colocar de mas fica branco
+    decimal(10): rgb(1.0,0.0,0.0) (vermelho) pode misturar valores de 0.0 a 1.0
+    otimo é o color.adobe.com para escolher cores ou o COLORS.HEX EXTENCAO NO CROME COLOR ZILA
+    porura no google fontes para importar ..
+    box-sizing: border-box sempre delimita o tamanho da borda o mas utilizado faz com que o padding e a border sejam incluidos na largura e altura totais do elemento
+    box-sizing: content-box; faz com que o padding e a border nao sejam incluidos na largura e altura totais do elemento
+    DISPLAY
+    BLOCK: padrão dos de bloco, ocupa toda a largura disponivel, sempre inicia em uma nova linha
+     exemplos: div, h1, p, ul, ol, li, header, footer, section
+    ocupa toda a largura disponivel, sempre inicia em uma nova linha
+    NONE: elemento nao é exibido
+    podemos definir height e width
+    exemplos: display: none;  display: block;
+    podemos definir o valor da margem, padding, border, height e width
+    exemplos: display: none;  display: block;
+     
+    INLINE os componentes ficam na mesma linha, nao podemos definir height e width
+    exemplos: span, a, strong, em, img
+    nao tem valor de height e width
+    exemplos: display: inline;  display: inline-block;
+    ignora os valores de margin top e bottom, padding top e bottom, height e width
+    ganhacomportamentos de uma palavra normal
+    exemplos: display: inline;  display: inline-block;
+    
+    INLINE-BLOCK tem comportamentos de bloco e inline
+    podemos definir height e width
+    altura e larguras podem ser definidas
+    elementos em linha, porem com caracteristicas de bloco
+    MAS PODER DE FOGO
+    GRID
+    FLEX
+    vamos utiliza muito o figma para desenhar o layout fique sempre logado 
+    ou o adobe
+    */
+
+
+  
+  *{background: white;}/* cor de fundo padrao para todos os elementos*/
+
+h1{
+        color: red;/*cor do texto*/
+        font-size: 64px;/*tamanho da fonte*/
+        background: black;/*cor de fundo*/
+        text-align: center; /*alinhamento do texto*/
+        font-family: Arial, Helvetica, sans-serif;/*tipo da fonte*/
+        font-weight: bold;/*espessura da fonte*/
+        font-style: normal;/*   estilo da fonte*/
+        text-decoration: underline;/*decoração do texto*/
+        .playwrite-us-trad-guides-regular {
+        font-family: "Playwrite US Trad Guides",cursive;/*sans-serif;*//*tipo da fonte*/
+        font-style: normal;/*   estilo da fonte*/}
+         .science-gothic-regular {
+        font-family: "Science Gothic", sans-serif;/*tipo da fonte*/
+        font-weight: 400;/*   espessura da fonte*/
+        font-style: normal;/*  estilo da fonte*/
+        text-shadow: 10px 10px 5px grey;/*    sombra do texto*/}
+
+    }
+
+    p{
+        color: blue;/*  cor do texto*/
+        font-size: 30px;/*  tamanho da fonte*/
+        background: lightgray;/* cor de fundo*/
+        font-weight: bold;/*  espessura da fonte*/
+        font-family: 'Courier New', Courier, monospace;/*   tipo da fonte*/
+        font-style: italic;/*   estilo da fonte*/
+        text-shadow: 5px 5px 5px grey;/*   sombra do texto*/
+        line-height: 50px;/*  altura da linha*/
+        letter-spacing: 30px;/*  espaçamento entre letras*/
+        word-spacing: 40px;/*  espaçamento entre palavras*/
+        text-align: center/*    alinhamento do texto*/
+        
+    }
+    button{
+        background-color: orange;/* cor de fundo*/
+        color: green;/* cor do texto*/
+        padding: 10px 20px;/*   espaçamento interno*/
+        border: darkgreen;/*    cor da borda*/
+        border-radius: 5px;/* arredondamento da borda*/
+        cursor: pointer;/*  cursor ao passar o mouse*/
+    }
+    button:hover{
+        background-color: darkorange;/* cor de fundo ao passar o mouse*/
+        color: lightgreen;/* cor do texto ao passar o mouse*/  
+    }
+ #titulo{
+    
+        color:red;/*    cor do texto*/
+        font-size: 55px;/*   tamanho da fonte*/
+        background: black;/* cor de fundo*/
+    }
+    #paragrafo{
+            color: blue;/*  cor do texto*/
+            font-size: 20px;/*  tamanho da fonte*/
+            background: lightgray;/* cor de fundo*/ 
+            font-weight: bold;/*  espessura da fonte*/
+            font-family: 'Courier New', Courier, monospace;/*   tipo da fonte*/ 
+    }
+
+    #botao{
+        background-color: orange;/* cor de fundo*/
+        color: green;/* cor do texto*/
+        padding: 10px 20px;/*   espaçamento interno*/
+        border: darkgreen;/*    cor da borda*/
+        border-radius: 5px;/*       arredondamento da borda*/
+        cursor: pointer;/*  cursor ao passar o mouse*/
+    }                           
+    #outro-botao{
+        background-color: purple;/* cor de fundo*/
+        color: yellow;/*    cor do texto*/
+        padding: 10px 20px;/*   espaçamento interno*/
+        border: darkblue;/*    cor da borda*/
+        border-radius: 5px;/*    arredondamento da borda*/
+        cursor: pointer;/*  cursor ao passar o mouse*/
+    }
+    .texto{
+        font-family: 'Arial Black', Gadget, sans-serif;/* tipo da fonte*/
+        font-size: 24px;/*   tamanho da fonte*/ 
+    }
+
+    
+    .b1{
+        font-size: 18px;/*   tamanho da fonte*/
+        font-weight: bold;/*    espessura da fonte*/
+    }
+*{box-sizing: border-box;}/* faz com que o padding e a border sejam incluidos na largura e altura totais do elemento*/  
+    .box{
+        width: 100px;/* largura da caixa*/
+        height: 100px;/* altura da caixa*/
+        background: #ff1493;/* cor de fundo*/
+        margin-top: 20px;/* espaçamento externo em cima*/
+        margin-bottom: 30px;/* espaçamento externo em baixo*/
+        margin-right: 10px;/* espaçamento externo direita*/
+        margin-left: 5px;/* espaçamento externo esquerda*/
+        padding-top: 15px;/* espaçamento interno*/
+        padding-bottom: 25px;/* espaçamento interno*/
+        padding-right: 35px;/* espaçamento interno*/
+        padding-left: 45px;/* espaçamento interno*/
+        border:10px solid #000ff0;/* borda: largura, estilo, cor*/
+ }
+    
+    .box2{
+        width: 100px;/* largura da caixa*/
+        height: 100px;/* altura da caixa*/
+        background: #FFFF00;/* cor de fundo*/
+        border: 10px solid black;/* borda: largura, estilo, cor*/
+        margin:10px;   /* usar como atalho:ordem de acordo com um relogio: cima, direita, baixo, esquerda*/
+        padding:15px;  /* ordem: cima, direita, baixo, esquerda*/
+
+        /*QUANDO QUER COLOCAR A MESMA COISA EM TODOS OS LADOS SO COLOCAR APENAS UM VALOR 
+        E QUANDO QUISER 3 VALORES, O PRIMEIRO É CIMA, O SEGUNDO DIREITA E ESQUERDA, O TERCEIRO EM BAIXO
+        E QUANDO FOR 2 VALORES, O PRIMEIRO É CIMA E BAIXO, O SEGUNDO DIREITA E ESQUERDA*/
+   
+        /*box-sizing: border-box; faz com que o padding e a border sejam incluidos na largura e altura totais do elemento*/
+    }   
+
+    .box3{
+        width: 150px;/* largura da caixa*/
+        height: 150px;/* altura da caixa*/
+        background: #0003ff;/* cor de fundo*/
+        border: 5px dashed #ff4500;/* borda: largura, estilo, cor*/
+        margin:20px;   /* usar como atalho:ordem de acordo com um relogio: cima, direita, baixo, esquerda*/
+        padding:25px;  /* ordem: cima, direita, baixo, esquerda*/
+
+    }
